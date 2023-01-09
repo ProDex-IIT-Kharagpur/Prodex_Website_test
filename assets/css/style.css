@@ -412,10 +412,51 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 28px 11px 28px;
   border-radius: 50px;
   transition: 0.5s;
-  margin: 10px 0 0 0;
+  margin: 10px 10px 0 0;
   color: #fff;
   background: #47b2e4;
 }
+
+#hero .btn-intro-sem {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px 11px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px 10px 0 0;
+  color: #fff;
+  /* background: #47b2e4; */
+  /* background-image: linear-gradient(270deg, #abd2e3, #1094d2);
+  animation: TransitioningBackground 10s ease infinite; */
+  
+}
+
+#hero .btn-intro-sem:hover {
+  background-image: linear-gradient(to left, #777bae, #8f46d0);
+  cursor: pointer; 
+}
+
+@keyframes glowing {
+  0% {
+    background: #2ba805;
+    box-shadow: 0 0 5px #2ba805;
+  }
+  50% {
+    background: #49e819;
+    box-shadow: 0 0 20px #49e819;
+  }
+  100% {
+    background: #2ba805;
+    box-shadow: 0 0 5px #2ba805;
+  }
+}
+#hero .button-intro-sem {
+  animation: glowing 1300ms infinite;
+}
+
 
 #hero .btn-get-started:hover {
   background: #209dd8;
