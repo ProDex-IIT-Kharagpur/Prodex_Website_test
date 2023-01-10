@@ -128,6 +128,22 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 40px;
 }
 
+#header .Intro-registration-marquee {
+  font-size: 30px;
+  color: #fff;
+  background: #409cc6;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;  
+}
+
+#header .Intro-registration-marquee a {
+  margin-top: auto;
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -417,7 +433,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #47b2e4;
 }
 
-#hero .btn-intro-sem {
+.buttonIntroSem {
   font-family: "Jost", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -428,35 +444,48 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.5s;
   margin: 10px 10px 0 0;
   color: #fff;
-  /* background: #47b2e4; */
-  /* background-image: linear-gradient(270deg, #abd2e3, #1094d2);
-  animation: TransitioningBackground 10s ease infinite; */
-  
-}
-
-#hero .btn-intro-sem:hover {
-  background-image: linear-gradient(to left, #777bae, #8f46d0);
-  cursor: pointer; 
+  text-decoration: none;
 }
 
 @keyframes glowing {
   0% {
-    background: #2ba805;
-    box-shadow: 0 0 5px #2ba805;
+    background-color: #0557a8;
+    box-shadow: 0 0 5px #0557a8;
   }
   50% {
-    background: #49e819;
-    box-shadow: 0 0 20px #49e819;
+    background-color: #19a7e8;
+    box-shadow: 0 0 20px #19a7e8;
   }
   100% {
-    background: #2ba805;
-    box-shadow: 0 0 5px #2ba805;
+    background-color: #0557a8;
+    box-shadow: 0 0 5px #0557a8;
   }
 }
-#hero .button-intro-sem {
+@keyframes glowinghover {
+  0% { 
+    background-color: #19a7e8;
+    box-shadow: 0 0 -10px #c4a300;                 
+  }
+  40% { 
+    box-shadow: 0 0 20px #c4a300; 
+    background-color: #19a7e8;
+  }
+  60% {
+    box-shadow: 0 0 20px #c4a300; 
+    background-color: #19a7e8;
+  }
+  100% {
+    box-shadow: 0 0 -10px #c4a300; 
+    background-color: #19a7e8;
+  }
+}
+.buttonIntroSem {
   animation: glowing 1300ms infinite;
 }
-
+.buttonIntroSem:hover {
+  animation: glowinghover 500ms infinite;
+  color: #fff;
+}
 
 #hero .btn-get-started:hover {
   background: #209dd8;
